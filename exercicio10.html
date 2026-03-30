@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1>Exercicio 10</h1>
+        <h2>Enunciado:</h2>
+        <p>10 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.</p>
+
+    <script>
+        let N = parseInt(prompt("Digite um valor N para imprimir as tabuadas de 1 a N:"));
+
+        while (N <= 0) {
+            alert("Valor inválido. Digite um valor maior que zero.");
+            N = parseInt(prompt("Digite um valor N para imprimir as tabuadas de 1 a N:"));
+        }
+
+        for (let i = 1; i <= N; i++) {
+            document.write("Tabuada do " + i + ":<br>");
+            for (let j = 1; j <= 10; j++) {
+                document.write(i + " x " + j + " = " + (i * j) + "<br>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
